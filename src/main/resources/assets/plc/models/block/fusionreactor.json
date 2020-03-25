@@ -1,0 +1,8 @@
+{
+  "parent": "plc:custom/fusion",
+  "textures": {
+    "all": "plc:blocks/fusionblock",
+    "particle": "plc:blocks/fusionblock",
+    "0": "plc:blocks/fusionblock"
+  }
+}

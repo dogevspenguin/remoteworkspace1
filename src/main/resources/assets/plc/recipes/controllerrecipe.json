@@ -1,0 +1,36 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "345",
+    " 78"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:metalicstick"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:glass"
+    },
+    "4": {
+      "item": "plc:metalichydrogendust"
+    },
+    "5": {
+      "item": "minecraft:redstone"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "plc:metalicstick"
+    }
+  },
+  "result": {
+    "item": "plc:controller",
+    "count": 1
+  }
+}

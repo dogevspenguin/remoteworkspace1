@@ -1,0 +1,45 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": "CUSTOM:MetalichydrogenArmor.helmet"
+    },
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MetalichydrogenDust"
+      },
+      {
+        "value": "CUSTOM:MetalichydrogenDust"
+      },
+      {
+        "value": "CUSTOM:MetalichydrogenDust"
+      },
+      {
+        "value": "CUSTOM:MetalichydrogenDust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MetalichydrogenDust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "smeltingXPReward": 0.0,
+    "smeltingRetstackSize": 1,
+    "name": "metalichydrogenarmorhelmetrecipe",
+    "namespace": "mod"
+  }
+}

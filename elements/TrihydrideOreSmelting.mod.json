@@ -1,0 +1,51 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": ""
+    },
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "smeltingInputStack": {
+      "value": "CUSTOM:TrihydrideOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:TrihydrideIngot"
+    },
+    "smeltingXPReward": 2.0999999999999996,
+    "smeltingRetstackSize": 1,
+    "name": "trihydrideoresmelting",
+    "namespace": "mod"
+  }
+}

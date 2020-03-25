@@ -1,0 +1,13 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "plc:titaniumoreblock"
+    }
+  ],
+  "result": {
+    "item": "plc:titaniumingot",
+    "count": 9
+  }
+}

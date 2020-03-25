@@ -1,0 +1,26 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:titaniumingot"
+    },
+    "2": {
+      "item": "plc:titaniumingot"
+    },
+    "3": {
+      "item": "plc:titaniumingot"
+    },
+    "5": {
+      "item": "plc:titaniumingot"
+    }
+  },
+  "result": {
+    "item": "plc:titaniumarmorboots",
+    "count": 1
+  }
+}

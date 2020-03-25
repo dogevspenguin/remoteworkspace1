@@ -1,0 +1,36 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:titaniumingot"
+    },
+    "1": {
+      "item": "plc:titaniumingot"
+    },
+    "2": {
+      "item": "plc:titaniumingot"
+    },
+    "3": {
+      "item": "plc:titaniumingot"
+    },
+    "5": {
+      "item": "plc:titaniumingot"
+    },
+    "6": {
+      "item": "plc:titaniumingot"
+    },
+    "8": {
+      "item": "plc:titaniumingot"
+    }
+  },
+  "result": {
+    "item": "plc:titaniumarmorlegs",
+    "count": 1
+  }
+}

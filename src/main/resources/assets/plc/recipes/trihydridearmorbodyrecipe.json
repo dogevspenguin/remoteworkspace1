@@ -1,0 +1,39 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:trihydrideingot"
+    },
+    "2": {
+      "item": "plc:trihydrideingot"
+    },
+    "3": {
+      "item": "plc:trihydrideingot"
+    },
+    "4": {
+      "item": "plc:trihydrideingot"
+    },
+    "5": {
+      "item": "plc:trihydrideingot"
+    },
+    "6": {
+      "item": "plc:trihydrideingot"
+    },
+    "7": {
+      "item": "plc:trihydrideingot"
+    },
+    "8": {
+      "item": "plc:trihydrideingot"
+    }
+  },
+  "result": {
+    "item": "plc:trihydridearmorbody",
+    "count": 1
+  }
+}

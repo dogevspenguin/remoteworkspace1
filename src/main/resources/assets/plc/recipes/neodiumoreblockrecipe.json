@@ -1,0 +1,42 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:neodiumingot"
+    },
+    "1": {
+      "item": "plc:neodiumingot"
+    },
+    "2": {
+      "item": "plc:neodiumingot"
+    },
+    "3": {
+      "item": "plc:neodiumingot"
+    },
+    "4": {
+      "item": "plc:neodiumingot"
+    },
+    "5": {
+      "item": "plc:neodiumingot"
+    },
+    "6": {
+      "item": "plc:neodiumingot"
+    },
+    "7": {
+      "item": "plc:neodiumingot"
+    },
+    "8": {
+      "item": "plc:neodiumingot"
+    }
+  },
+  "result": {
+    "item": "plc:neodiumoreblock",
+    "count": 1
+  }
+}

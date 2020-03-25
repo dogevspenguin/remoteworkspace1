@@ -1,0 +1,26 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "plc:cabbage"
+    },
+    "1": {
+      "item": "plc:icelemon"
+    },
+    "2": {
+      "item": "plc:cockedpenguinmeat"
+    },
+    "4": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "plc:antarcticsalad",
+    "count": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "_fv": 5,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "sodium_gun",
+    "customModelName": "Normal",
+    "name": "Penguin gun",
+    "creativeTab": {
+      "value": "CUSTOM:Antarcticraft"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 198,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelbabypenguin",
+    "customBulletModelTexture": "babypenguin.png",
+    "onBulletHitsBlock": {
+      "name": "PenguingunBullet"
+    },
+    "onBulletHitsPlayer": {
+      "name": "PenguingunBullet"
+    },
+    "onBulletHitsEntity": {
+      "name": "PenguingunBullet"
+    }
+  }
+}

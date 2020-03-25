@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "plc:blocks/cabbage",
+    "particle": "plc:blocks/cabbage"
+  }
+}

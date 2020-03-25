@@ -1,0 +1,29 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:metalichydrogendust"
+    },
+    "1": {
+      "item": "plc:metalichydrogendust"
+    },
+    "2": {
+      "item": "plc:metalichydrogendust"
+    },
+    "3": {
+      "item": "plc:metalichydrogendust"
+    },
+    "5": {
+      "item": "plc:metalichydrogendust"
+    }
+  },
+  "result": {
+    "item": "plc:metalichydrogenarmorhelmet",
+    "count": 1
+  }
+}

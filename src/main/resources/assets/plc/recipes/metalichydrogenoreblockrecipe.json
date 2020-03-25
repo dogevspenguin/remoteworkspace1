@@ -1,0 +1,42 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:metalichydrogendust"
+    },
+    "1": {
+      "item": "plc:metalichydrogendust"
+    },
+    "2": {
+      "item": "plc:metalichydrogendust"
+    },
+    "3": {
+      "item": "plc:metalichydrogendust"
+    },
+    "4": {
+      "item": "plc:metalichydrogendust"
+    },
+    "5": {
+      "item": "plc:metalichydrogendust"
+    },
+    "6": {
+      "item": "plc:metalichydrogendust"
+    },
+    "7": {
+      "item": "plc:metalichydrogendust"
+    },
+    "8": {
+      "item": "plc:metalichydrogendust"
+    }
+  },
+  "result": {
+    "item": "plc:metalichydrogenoreblock",
+    "count": 1
+  }
+}

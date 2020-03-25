@@ -1,0 +1,24 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:trihydrideingot"
+    },
+    "1": {
+      "item": "plc:trihydrideingot"
+    },
+    "2": {
+      "item": "plc:metalicstick"
+    }
+  },
+  "result": {
+    "item": "plc:trihydridesword",
+    "count": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 5,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "ice_lemon_plant",
+    "customModelName": "Cross model",
+    "plantType": "normal",
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "name": "Icelemon",
+    "creativeTab": {
+      "value": "CUSTOM:Antarcticraft"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0.0,
+    "unbreakable": false,
+    "soundOnStep": {
+      "value": "GROUND"
+    },
+    "customDrop": {
+      "value": "CUSTOM:Icelemon"
+    },
+    "dropAmount": 2,
+    "isReplaceable": false,
+    "isFlammable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "frequencyOnChunks": 20,
+    "spawnWorldTypes": [
+      "CUSTOM:Southpole",
+      "CUSTOM:Northpole"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Snowvallaysoutj"
+      },
+      {
+        "value": "CUSTOM:Snowvallaynorth"
+      }
+    ]
+  }
+}

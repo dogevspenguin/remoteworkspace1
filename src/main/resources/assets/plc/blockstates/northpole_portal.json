@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "plc:northpole_portal_ew"
+    },
+    "axis=x": {
+      "model": "plc:northpole_portal_ns"
+    },
+    "inventory": {
+      "model": "plc:northpole_portal_ns"
+    }
+  }
+}

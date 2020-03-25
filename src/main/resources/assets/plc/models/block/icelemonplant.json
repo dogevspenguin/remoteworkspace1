@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "plc:blocks/ice_lemon_plant",
+    "particle": "plc:blocks/ice_lemon_plant"
+  }
+}

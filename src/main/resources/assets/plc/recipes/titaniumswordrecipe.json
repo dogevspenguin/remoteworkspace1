@@ -1,0 +1,24 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:titaniumingot"
+    },
+    "1": {
+      "item": "plc:titaniumingot"
+    },
+    "2": {
+      "item": "plc:metalicstick"
+    }
+  },
+  "result": {
+    "item": "plc:titaniumsword",
+    "count": 1
+  }
+}

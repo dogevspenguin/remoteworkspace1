@@ -1,0 +1,27 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    " 3",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:metalichydrogendust"
+    },
+    "1": {
+      "item": "plc:metalichydrogendust"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "plc:metalichydrogenhoe",
+    "count": 1
+  }
+}

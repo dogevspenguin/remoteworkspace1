@@ -1,0 +1,26 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:trihydrideingot"
+    },
+    "2": {
+      "item": "plc:trihydrideingot"
+    },
+    "3": {
+      "item": "plc:trihydrideingot"
+    },
+    "5": {
+      "item": "plc:trihydrideingot"
+    }
+  },
+  "result": {
+    "item": "plc:trihydridearmorboots",
+    "count": 1
+  }
+}

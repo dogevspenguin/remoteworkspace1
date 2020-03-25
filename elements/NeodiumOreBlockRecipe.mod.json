@@ -1,0 +1,45 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": "CUSTOM:NeodiumOreBlock"
+    },
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NeodiumIngot"
+      },
+      {
+        "value": "CUSTOM:NeodiumIngot"
+      },
+      {
+        "value": "CUSTOM:NeodiumIngot"
+      },
+      {
+        "value": "CUSTOM:NeodiumIngot"
+      },
+      {
+        "value": "CUSTOM:NeodiumIngot"
+      },
+      {
+        "value": "CUSTOM:NeodiumIngot"
+      },
+      {
+        "value": "CUSTOM:NeodiumIngot"
+      },
+      {
+        "value": "CUSTOM:NeodiumIngot"
+      },
+      {
+        "value": "CUSTOM:NeodiumIngot"
+      }
+    ],
+    "smeltingXPReward": 0.0,
+    "smeltingRetstackSize": 1,
+    "name": "neodiumoreblockrecipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_fv": 5,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "titanium_axe2",
+    "customModelName": "Normal",
+    "name": "Titanium Axe",
+    "creativeTab": {
+      "value": "CUSTOM:Antarcticraft"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 4,
+    "efficiency": 9.0,
+    "attackSpeed": 1.0,
+    "enchantability": 28,
+    "damageVsEntity": 5.5,
+    "usageCount": 670,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": []
+  }
+}

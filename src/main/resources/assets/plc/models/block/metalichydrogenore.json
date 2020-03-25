@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "plc:blocks/metalic_hydrogen",
+    "particle": "plc:blocks/metalic_hydrogen"
+  }
+}

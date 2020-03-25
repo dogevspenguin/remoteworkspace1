@@ -1,0 +1,51 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": ""
+    },
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "smeltingInputStack": {
+      "value": "CUSTOM:NeodiumOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:NeodiumIngot"
+    },
+    "smeltingXPReward": 0.7,
+    "smeltingRetstackSize": 1,
+    "name": "neodiumoresmelting",
+    "namespace": "mod"
+  }
+}

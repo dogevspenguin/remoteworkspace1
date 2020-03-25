@@ -1,0 +1,45 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": "CUSTOM:TrihydrideArmor.boots"
+    },
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TrihydrideIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TrihydrideIngot"
+      },
+      {
+        "value": "CUSTOM:TrihydrideIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TrihydrideIngot"
+      }
+    ],
+    "smeltingXPReward": 0.0,
+    "smeltingRetstackSize": 1,
+    "name": "trihydridearmorbootsrecipe",
+    "namespace": "mod"
+  }
+}

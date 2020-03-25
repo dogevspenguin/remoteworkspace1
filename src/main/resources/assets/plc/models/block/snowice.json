@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "plc:blocks/icesnow",
+    "up": "plc:blocks/icesnow",
+    "north": "plc:blocks/icesnow",
+    "east": "plc:blocks/icesnow",
+    "south": "plc:blocks/icesnow",
+    "west": "plc:blocks/icesnow",
+    "particle": "plc:blocks/icesnow"
+  }
+}

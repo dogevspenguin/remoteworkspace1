@@ -1,0 +1,24 @@
+{
+  "_fv": 5,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "buffet1",
+    "customModelName": "Normal",
+    "name": "Antarcticsalad",
+    "creativeTab": {
+      "value": "CUSTOM:Antarcticraft"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 22,
+    "saturation": 7.0,
+    "eatingSpeed": 32,
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "AntarcticsaladFoodEaten"
+    }
+  }
+}

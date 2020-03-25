@@ -1,0 +1,13 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "plc:trihydrideoreblock"
+    }
+  ],
+  "result": {
+    "item": "plc:trihydrideingot",
+    "count": 9
+  }
+}
