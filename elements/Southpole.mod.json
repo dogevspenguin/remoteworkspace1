@@ -1,5 +1,5 @@
 {
-  "_fv": 5,
+  "_fv": 6,
   "_type": "dimension",
   "definition": {
     "portalFrame": {
@@ -32,7 +32,7 @@
       "value": "CUSTOM:Compacice"
     },
     "secondaryFillerBlock": {
-      "value": "CUSTOM:Snowice"
+      "value": "CUSTOM:Compressice"
     },
     "tertiaryFillerBlock": {
       "value": ""
@@ -55,7 +55,7 @@
       "falpha": 1.0
     },
     "canRespawnHere": true,
-    "hasFog": true,
+    "hasFog": false,
     "hasWeather": true,
     "isDark": false,
     "doesWaterVaporize": false,

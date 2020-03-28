@@ -1,0 +1,17 @@
+{
+  "_fv": 6,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "penguin_disk",
+    "name": "Calmpen",
+    "description": "penguin",
+    "creativeTab": {
+      "value": "CUSTOM:Antarcticraft"
+    },
+    "music": {
+      "value": "CUSTOM:penguinmusic"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

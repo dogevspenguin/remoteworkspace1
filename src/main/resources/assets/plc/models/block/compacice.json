@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "plc:blocks/compact_ice",
-    "up": "plc:blocks/compact_ice",
-    "north": "plc:blocks/compact_ice",
-    "east": "plc:blocks/compact_ice",
-    "south": "plc:blocks/compact_ice",
-    "west": "plc:blocks/compact_ice",
-    "particle": "plc:blocks/compact_ice"
+    "all": "plc:blocks/compactice",
+    "particle": "plc:blocks/compactice"
   }
 }

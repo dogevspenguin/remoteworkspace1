@@ -1,0 +1,17 @@
+{
+  "_fv": 6,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "musicdick",
+    "name": "Deorbit",
+    "description": "from crysis 3.title by a youtube vidieo",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:deorbit"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

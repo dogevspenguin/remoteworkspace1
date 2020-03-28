@@ -1,0 +1,19 @@
+{
+  "_fv": 6,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "kiwi",
+    "name": "Kiwisong",
+    "description": "kIWI KIWI",
+    "creativeTab": {
+      "value": "CUSTOM:Antarcticraft"
+    },
+    "music": {
+      "value": "CUSTOM:kiwi"
+    },
+    "specialInfo": [
+      "kwiwiiii"
+    ],
+    "hasGlow": false
+  }
+}

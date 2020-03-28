@@ -1,1 +1,65 @@
-{}
+{
+  "deorbit": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "plc:rysis-3-01-rysis-3-ew-ork-emories",
+        "stream": true
+      }
+    ]
+  },
+  "penguin_hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "plc:penguin-hurt",
+        "stream": false
+      }
+    ]
+  },
+  "babypenguin": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "plc:penguin3",
+        "stream": false
+      }
+    ]
+  },
+  "diepenguin": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "plc:penguindie",
+        "stream": false
+      }
+    ]
+  },
+  "seal": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "plc:seal",
+        "stream": false
+      }
+    ]
+  },
+  "penguinmusic": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "plc:enguin-ounds-2-6642-ree-oops.com",
+        "stream": true
+      }
+    ]
+  },
+  "kiwi": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "plc:kiwibird",
+        "stream": true
+      }
+    ]
+  }
+}

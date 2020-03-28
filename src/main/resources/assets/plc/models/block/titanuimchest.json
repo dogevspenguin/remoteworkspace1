@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "plc:blocks/chestbottom",
+    "up": "plc:blocks/chestbottom",
+    "north": "plc:blocks/chest_front",
+    "east": "plc:blocks/chest_side",
+    "south": "plc:blocks/chest_side",
+    "west": "plc:blocks/chest_side",
+    "particle": "plc:blocks/chestbottom"
+  }
+}

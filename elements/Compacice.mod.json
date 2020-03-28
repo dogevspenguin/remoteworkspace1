@@ -1,15 +1,15 @@
 {
-  "_fv": 5,
+  "_fv": 6,
   "_type": "block",
   "definition": {
-    "texture": "compact_ice",
+    "texture": "compactice",
     "textureTop": "compact_ice",
     "textureLeft": "compact_ice",
     "textureFront": "compact_ice",
     "textureRight": "compact_ice",
     "textureBack": "compact_ice",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "hasTransparency": false,
     "transparencyType": "SOLID",
@@ -45,12 +45,17 @@
       "value": "ICE"
     },
     "tickRate": 10,
+    "tickRandomly": false,
     "isReplaceable": false,
-    "isFlammable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
       "value": "SNOW"
@@ -67,6 +72,8 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,

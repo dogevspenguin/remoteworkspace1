@@ -1,5 +1,5 @@
 {
-  "_fv": 5,
+  "_fv": 6,
   "_type": "biome",
   "definition": {
     "name": "Icevallaysouth",
@@ -7,7 +7,7 @@
       "value": "CUSTOM:Compacice"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Compressice"
+      "value": "Blocks.STONE#0"
     },
     "generateLakes": true,
     "treeType": 0,
