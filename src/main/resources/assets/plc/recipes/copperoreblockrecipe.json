@@ -1,0 +1,42 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:copperingot"
+    },
+    "1": {
+      "item": "plc:copperingot"
+    },
+    "2": {
+      "item": "plc:copperingot"
+    },
+    "3": {
+      "item": "plc:copperingot"
+    },
+    "4": {
+      "item": "plc:copperingot"
+    },
+    "5": {
+      "item": "plc:copperingot"
+    },
+    "6": {
+      "item": "plc:copperingot"
+    },
+    "7": {
+      "item": "plc:copperingot"
+    },
+    "8": {
+      "item": "plc:copperingot"
+    }
+  },
+  "result": {
+    "item": "plc:copperoreblock",
+    "count": 1
+  }
+}

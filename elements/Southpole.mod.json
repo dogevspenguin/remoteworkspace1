@@ -38,7 +38,7 @@
       "value": ""
     },
     "fluidBlock": {
-      "value": "Blocks.WATER"
+      "value": "CUSTOM:Icewater"
     },
     "airColor": {
       "value": -4138753,
@@ -57,7 +57,7 @@
     "canRespawnHere": true,
     "hasFog": false,
     "hasWeather": true,
-    "isDark": false,
+    "isDark": true,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": true,

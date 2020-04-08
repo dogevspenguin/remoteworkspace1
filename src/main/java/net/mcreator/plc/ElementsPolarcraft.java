@@ -34,8 +34,8 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
+import net.mcreator.plc.gui.GuiTitaniumchest;
 import net.mcreator.plc.gui.GuiFusionreatorgui;
-import net.mcreator.plc.gui.GuiBackpackgui;
 
 import java.util.function.Supplier;
 import java.util.Random;
@@ -134,8 +134,8 @@ public class ElementsPolarcraft implements IFuelHandler, IWorldGenerator {
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 			if (id == GuiFusionreatorgui.GUIID)
 				return new GuiFusionreatorgui.GuiContainerMod(world, x, y, z, player);
-			if (id == GuiBackpackgui.GUIID)
-				return new GuiBackpackgui.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiTitaniumchest.GUIID)
+				return new GuiTitaniumchest.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -143,8 +143,8 @@ public class ElementsPolarcraft implements IFuelHandler, IWorldGenerator {
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 			if (id == GuiFusionreatorgui.GUIID)
 				return new GuiFusionreatorgui.GuiWindow(world, x, y, z, player);
-			if (id == GuiBackpackgui.GUIID)
-				return new GuiBackpackgui.GuiWindow(world, x, y, z, player);
+			if (id == GuiTitaniumchest.GUIID)
+				return new GuiTitaniumchest.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

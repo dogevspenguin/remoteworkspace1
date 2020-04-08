@@ -21,7 +21,7 @@ public class ItemCabbageleave extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:cabbageleave")
 	public static final Item block = null;
 	public ItemCabbageleave(ElementsPolarcraft instance) {
-		super(instance, 31);
+		super(instance, 26);
 	}
 
 	@Override

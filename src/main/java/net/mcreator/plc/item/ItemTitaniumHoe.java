@@ -24,7 +24,7 @@ public class ItemTitaniumHoe extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:titaniumhoe")
 	public static final Item block = null;
 	public ItemTitaniumHoe(ElementsPolarcraft instance) {
-		super(instance, 10);
+		super(instance, 7);
 	}
 
 	@Override

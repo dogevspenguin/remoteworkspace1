@@ -19,7 +19,6 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
-import net.minecraft.init.Blocks;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
@@ -28,7 +27,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.plc.world.WorldSouthpole;
 import net.mcreator.plc.item.ItemNeodiumIngot;
-import net.mcreator.plc.creativetab.TabAntarcticraft;
+import net.mcreator.plc.creativetab.TabMineral;
 import net.mcreator.plc.ElementsPolarcraft;
 
 import java.util.Random;
@@ -38,7 +37,7 @@ public class BlockNeodiumOre extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:neodiumore")
 	public static final Block block = null;
 	public BlockNeodiumOre(ElementsPolarcraft instance) {
-		super(instance, 47);
+		super(instance, 59);
 	}
 
 	@Override
@@ -66,23 +65,16 @@ public class BlockNeodiumOre extends ElementsPolarcraft.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		for (int i = 0; i < 11; i++) {
+		for (int i = 0; i < 13; i++) {
 			int x = chunkX + random.nextInt(16);
 			int y = random.nextInt(62) + 1;
 			int z = chunkZ + random.nextInt(16);
-			(new WorldGenMinable(block.getDefaultState(), 7, new com.google.common.base.Predicate<IBlockState>() {
+			(new WorldGenMinable(block.getDefaultState(), 9, new com.google.common.base.Predicate<IBlockState>() {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;
-					require = Blocks.STONE.getStateFromMeta(0);
-					try {
-						if ((blockAt.getBlock() == require.getBlock())
-								&& (blockAt.getBlock().getMetaFromState(blockAt) == require.getBlock().getMetaFromState(require)))
-							blockCriteria = true;
-					} catch (Exception e) {
-						if (blockAt.getBlock() == require.getBlock())
-							blockCriteria = true;
-					}
+					if (blockAt.getBlock() == BlockCompacice.block.getDefaultState().getBlock())
+						blockCriteria = true;
 					return blockCriteria;
 				}
 			})).generate(world, random, new BlockPos(x, y, z));
@@ -98,7 +90,7 @@ public class BlockNeodiumOre extends ElementsPolarcraft.ModElement {
 			setResistance(5F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabAntarcticraft.tab);
+			setCreativeTab(TabMineral.tab);
 		}
 
 		@Override

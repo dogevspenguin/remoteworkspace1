@@ -24,7 +24,7 @@ public class ItemMetalichydrogenPickaxe extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:metalichydrogenpickaxe")
 	public static final Item block = null;
 	public ItemMetalichydrogenPickaxe(ElementsPolarcraft instance) {
-		super(instance, 41);
+		super(instance, 33);
 	}
 
 	@Override

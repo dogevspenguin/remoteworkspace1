@@ -39,7 +39,7 @@ public class BlockCabbage extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:cabbage")
 	public static final Block block = null;
 	public BlockCabbage(ElementsPolarcraft instance) {
-		super(instance, 32);
+		super(instance, 27);
 	}
 
 	@Override

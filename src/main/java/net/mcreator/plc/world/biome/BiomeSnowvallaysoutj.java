@@ -7,9 +7,9 @@ import net.minecraftforge.common.BiomeManager;
 
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.init.Blocks;
 
 import net.mcreator.plc.block.BlockSnowice;
+import net.mcreator.plc.block.BlockCompressice;
 import net.mcreator.plc.ElementsPolarcraft;
 
 import java.util.Random;
@@ -19,7 +19,7 @@ public class BiomeSnowvallaysoutj extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:snowvallaysouth")
 	public static final BiomeGenCustom biome = null;
 	public BiomeSnowvallaysoutj(ElementsPolarcraft instance) {
-		super(instance, 66);
+		super(instance, 84);
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class BiomeSnowvallaysoutj extends ElementsPolarcraft.ModElement {
 			super(new Biome.BiomeProperties("Snowvallaysouth").setRainfall(0.2F).setBaseHeight(0.1F).setHeightVariation(0.01F).setTemperature(-0.3F));
 			setRegistryName("snowvallaysouth");
 			topBlock = BlockSnowice.block.getDefaultState();
-			fillerBlock = Blocks.PACKED_ICE.getDefaultState();
+			fillerBlock = BlockCompressice.block.getDefaultState();
 			decorator.generateFalls = true;
 			decorator.treesPerChunk = 0;
 			decorator.flowersPerChunk = 0;

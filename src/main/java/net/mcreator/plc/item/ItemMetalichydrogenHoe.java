@@ -24,7 +24,7 @@ public class ItemMetalichydrogenHoe extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:metalichydrogenhoe")
 	public static final Item block = null;
 	public ItemMetalichydrogenHoe(ElementsPolarcraft instance) {
-		super(instance, 45);
+		super(instance, 37);
 	}
 
 	@Override

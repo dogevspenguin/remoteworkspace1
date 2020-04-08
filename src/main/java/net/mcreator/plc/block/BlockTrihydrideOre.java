@@ -19,7 +19,6 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
-import net.minecraft.init.Blocks;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
@@ -28,7 +27,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.plc.world.WorldSouthpole;
 import net.mcreator.plc.item.ItemTrihydrideIngot;
-import net.mcreator.plc.creativetab.TabAntarcticraft;
+import net.mcreator.plc.creativetab.TabMineral;
 import net.mcreator.plc.ElementsPolarcraft;
 
 import java.util.Random;
@@ -38,7 +37,7 @@ public class BlockTrihydrideOre extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:trihydrideore")
 	public static final Block block = null;
 	public BlockTrihydrideOre(ElementsPolarcraft instance) {
-		super(instance, 20);
+		super(instance, 54);
 	}
 
 	@Override
@@ -66,7 +65,7 @@ public class BlockTrihydrideOre extends ElementsPolarcraft.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 8; i++) {
 			int x = chunkX + random.nextInt(16);
 			int y = random.nextInt(22) + 1;
 			int z = chunkZ + random.nextInt(16);
@@ -74,7 +73,7 @@ public class BlockTrihydrideOre extends ElementsPolarcraft.ModElement {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;
-					if (blockAt.getBlock() == Blocks.PACKED_ICE.getDefaultState().getBlock())
+					if (blockAt.getBlock() == BlockCompacice.block.getDefaultState().getBlock())
 						blockCriteria = true;
 					return blockCriteria;
 				}
@@ -91,7 +90,7 @@ public class BlockTrihydrideOre extends ElementsPolarcraft.ModElement {
 			setResistance(12.041123426403463F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabAntarcticraft.tab);
+			setCreativeTab(TabMineral.tab);
 		}
 
 		@Override

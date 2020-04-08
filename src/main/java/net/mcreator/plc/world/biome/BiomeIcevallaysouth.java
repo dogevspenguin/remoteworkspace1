@@ -19,7 +19,7 @@ public class BiomeIcevallaysouth extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:icevallaysouth")
 	public static final BiomeGenCustom biome = null;
 	public BiomeIcevallaysouth(ElementsPolarcraft instance) {
-		super(instance, 65);
+		super(instance, 83);
 	}
 
 	@Override
@@ -36,8 +36,8 @@ public class BiomeIcevallaysouth extends ElementsPolarcraft.ModElement {
 		public BiomeGenCustom() {
 			super(new Biome.BiomeProperties("Icevallaysouth").setRainfall(0.5F).setBaseHeight(0.1F).setHeightVariation(0.08F).setTemperature(-0.5F));
 			setRegistryName("icevallaysouth");
-			topBlock = BlockCompacice.block.getDefaultState();
-			fillerBlock = Blocks.STONE.getStateFromMeta(0);
+			topBlock = Blocks.ICE.getDefaultState();
+			fillerBlock = BlockCompacice.block.getDefaultState();
 			decorator.generateFalls = true;
 			decorator.treesPerChunk = 0;
 			decorator.flowersPerChunk = 0;

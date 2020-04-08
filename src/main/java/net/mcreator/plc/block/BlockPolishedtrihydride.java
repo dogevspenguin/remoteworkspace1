@@ -22,7 +22,7 @@ public class BlockPolishedtrihydride extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:polishedtrihydride")
 	public static final Block block = null;
 	public BlockPolishedtrihydride(ElementsPolarcraft instance) {
-		super(instance, 29);
+		super(instance, 24);
 	}
 
 	@Override

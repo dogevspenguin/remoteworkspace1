@@ -20,7 +20,7 @@ public class ItemFuelcell extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:fuelcell")
 	public static final Item block = null;
 	public ItemFuelcell(ElementsPolarcraft instance) {
-		super(instance, 109);
+		super(instance, 41);
 	}
 
 	@Override

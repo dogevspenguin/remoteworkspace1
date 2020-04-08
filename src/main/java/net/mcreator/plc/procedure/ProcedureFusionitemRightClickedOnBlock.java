@@ -14,7 +14,7 @@ import net.mcreator.plc.ElementsPolarcraft;
 @ElementsPolarcraft.ModElement.Tag
 public class ProcedureFusionitemRightClickedOnBlock extends ElementsPolarcraft.ModElement {
 	public ProcedureFusionitemRightClickedOnBlock(ElementsPolarcraft instance) {
-		super(instance, 71);
+		super(instance, 89);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

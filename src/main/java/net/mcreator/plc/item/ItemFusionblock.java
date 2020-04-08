@@ -27,7 +27,7 @@ public class ItemFusionblock extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:fusionblock")
 	public static final Item block = null;
 	public ItemFusionblock(ElementsPolarcraft instance) {
-		super(instance, 19);
+		super(instance, 16);
 	}
 
 	@Override

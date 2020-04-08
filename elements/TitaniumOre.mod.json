@@ -2,7 +2,7 @@
   "_fv": 6,
   "_type": "block",
   "definition": {
-    "texture": "titaniumore",
+    "texture": "ti",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -26,7 +26,7 @@
     "resistance": 8.705505632961241,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:Antarcticraft"
+      "value": "CUSTOM:Mineral"
     },
     "destroyTool": "pickaxe",
     "affectedBySilkTouch": true,
@@ -87,15 +87,12 @@
         "value": "CUSTOM:Compressice"
       },
       {
-        "value": "Blocks.PACKED_ICE"
-      },
-      {
-        "value": "Blocks.STONE#0"
+        "value": "CUSTOM:Compacice"
       }
     ],
-    "frequencyPerChunks": 5,
-    "frequencyOnChunk": 3,
+    "frequencyPerChunks": 17,
+    "frequencyOnChunk": 5,
     "minGenerateHeight": 1,
-    "maxGenerateHeight": 33
+    "maxGenerateHeight": 50
   }
 }

@@ -24,7 +24,7 @@ public class ItemTrihydridePickaxe extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:trihydridepickaxe")
 	public static final Item block = null;
 	public ItemTrihydridePickaxe(ElementsPolarcraft instance) {
-		super(instance, 23);
+		super(instance, 18);
 	}
 
 	@Override

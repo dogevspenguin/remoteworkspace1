@@ -24,7 +24,7 @@ public class ItemTrihydrideHoe extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:trihydridehoe")
 	public static final Item block = null;
 	public ItemTrihydrideHoe(ElementsPolarcraft instance) {
-		super(instance, 27);
+		super(instance, 22);
 	}
 
 	@Override

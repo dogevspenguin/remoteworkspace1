@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "plassma_ball"
+      },
+      "name": "default"
+    }
+  }
+}

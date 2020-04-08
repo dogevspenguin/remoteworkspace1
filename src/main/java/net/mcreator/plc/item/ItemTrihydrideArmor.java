@@ -28,7 +28,7 @@ public class ItemTrihydrideArmor extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:trihydridearmorboots")
 	public static final Item boots = null;
 	public ItemTrihydrideArmor(ElementsPolarcraft instance) {
-		super(instance, 28);
+		super(instance, 23);
 	}
 
 	@Override

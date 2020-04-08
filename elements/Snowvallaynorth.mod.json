@@ -7,7 +7,7 @@
       "value": "CUSTOM:Snowice"
     },
     "undergroundBlock": {
-      "value": "Blocks.ICE"
+      "value": "CUSTOM:Compressice"
     },
     "generateLakes": true,
     "treeType": 0,

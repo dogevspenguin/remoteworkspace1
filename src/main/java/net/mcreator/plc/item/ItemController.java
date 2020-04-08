@@ -20,7 +20,7 @@ public class ItemController extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:controller")
 	public static final Item block = null;
 	public ItemController(ElementsPolarcraft instance) {
-		super(instance, 18);
+		super(instance, 15);
 	}
 
 	@Override

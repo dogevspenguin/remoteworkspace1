@@ -13,7 +13,7 @@ import net.mcreator.plc.ElementsPolarcraft;
 @ElementsPolarcraft.ModElement.Tag
 public class TabAntarcticraft extends ElementsPolarcraft.ModElement {
 	public TabAntarcticraft(ElementsPolarcraft instance) {
-		super(instance, 50);
+		super(instance, 68);
 	}
 
 	@Override

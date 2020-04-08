@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "plc:blocks/titaniumore",
-    "particle": "plc:blocks/titaniumore"
+    "all": "plc:blocks/ti",
+    "particle": "plc:blocks/ti"
   }
 }

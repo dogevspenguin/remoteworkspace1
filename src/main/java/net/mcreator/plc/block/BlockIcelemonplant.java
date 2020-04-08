@@ -42,7 +42,7 @@ public class BlockIcelemonplant extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:icelemonplant")
 	public static final Block block = null;
 	public BlockIcelemonplant(ElementsPolarcraft instance) {
-		super(instance, 34);
+		super(instance, 29);
 	}
 
 	@Override

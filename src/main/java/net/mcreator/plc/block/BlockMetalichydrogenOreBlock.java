@@ -14,7 +14,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
-import net.mcreator.plc.creativetab.TabAntarcticraft;
+import net.mcreator.plc.creativetab.TabMineral;
 import net.mcreator.plc.ElementsPolarcraft;
 
 @ElementsPolarcraft.ModElement.Tag
@@ -22,7 +22,7 @@ public class BlockMetalichydrogenOreBlock extends ElementsPolarcraft.ModElement 
 	@GameRegistry.ObjectHolder("plc:metalichydrogenoreblock")
 	public static final Block block = null;
 	public BlockMetalichydrogenOreBlock(ElementsPolarcraft instance) {
-		super(instance, 39);
+		super(instance, 58);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class BlockMetalichydrogenOreBlock extends ElementsPolarcraft.ModElement 
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabAntarcticraft.tab);
+			setCreativeTab(TabMineral.tab);
 		}
 	}
 }

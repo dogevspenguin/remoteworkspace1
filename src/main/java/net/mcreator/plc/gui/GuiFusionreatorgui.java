@@ -38,7 +38,7 @@ public class GuiFusionreatorgui extends ElementsPolarcraft.ModElement {
 	public static int GUIID = 1;
 	public static HashMap guistate = new HashMap();
 	public GuiFusionreatorgui(ElementsPolarcraft instance) {
-		super(instance, 109);
+		super(instance, 125);
 	}
 
 	@Override

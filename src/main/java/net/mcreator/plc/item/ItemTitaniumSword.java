@@ -29,7 +29,7 @@ public class ItemTitaniumSword extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:titaniumsword")
 	public static final Item block = null;
 	public ItemTitaniumSword(ElementsPolarcraft instance) {
-		super(instance, 8);
+		super(instance, 5);
 	}
 
 	@Override

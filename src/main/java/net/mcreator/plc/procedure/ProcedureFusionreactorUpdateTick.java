@@ -19,7 +19,7 @@ import net.mcreator.plc.ElementsPolarcraft;
 @ElementsPolarcraft.ModElement.Tag
 public class ProcedureFusionreactorUpdateTick extends ElementsPolarcraft.ModElement {
 	public ProcedureFusionreactorUpdateTick(ElementsPolarcraft instance) {
-		super(instance, 112);
+		super(instance, 127);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

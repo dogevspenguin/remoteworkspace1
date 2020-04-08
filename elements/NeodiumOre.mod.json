@@ -26,7 +26,7 @@
     "resistance": 5.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:Antarcticraft"
+      "value": "CUSTOM:Mineral"
     },
     "destroyTool": "pickaxe",
     "affectedBySilkTouch": true,
@@ -87,11 +87,11 @@
     ],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE#0"
+        "value": "CUSTOM:Compacice"
       }
     ],
-    "frequencyPerChunks": 11,
-    "frequencyOnChunk": 7,
+    "frequencyPerChunks": 13,
+    "frequencyOnChunk": 9,
     "minGenerateHeight": 1,
     "maxGenerateHeight": 63
   }

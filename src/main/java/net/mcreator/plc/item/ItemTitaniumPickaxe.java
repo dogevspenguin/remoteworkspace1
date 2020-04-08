@@ -24,7 +24,7 @@ public class ItemTitaniumPickaxe extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:titaniumpickaxe")
 	public static final Item block = null;
 	public ItemTitaniumPickaxe(ElementsPolarcraft instance) {
-		super(instance, 6);
+		super(instance, 3);
 	}
 
 	@Override

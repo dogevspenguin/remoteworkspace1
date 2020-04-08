@@ -24,7 +24,7 @@ public class ItemTrihydrideShovel extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:trihydrideshovel")
 	public static final Item block = null;
 	public ItemTrihydrideShovel(ElementsPolarcraft instance) {
-		super(instance, 26);
+		super(instance, 21);
 	}
 
 	@Override

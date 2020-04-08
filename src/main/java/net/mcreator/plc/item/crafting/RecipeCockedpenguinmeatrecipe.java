@@ -13,7 +13,7 @@ import net.mcreator.plc.ElementsPolarcraft;
 @ElementsPolarcraft.ModElement.Tag
 public class RecipeCockedpenguinmeatrecipe extends ElementsPolarcraft.ModElement {
 	public RecipeCockedpenguinmeatrecipe(ElementsPolarcraft instance) {
-		super(instance, 86);
+		super(instance, 104);
 	}
 
 	@Override

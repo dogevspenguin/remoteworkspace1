@@ -1,0 +1,26 @@
+{
+  "_fv": 6,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "copper_censor",
+    "customModelName": "Normal",
+    "name": "Coppersensor",
+    "creativeTab": {
+      "value": "CUSTOM:Mineral"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "use to detect thing but ever wonder that it can't detact it self"
+    ],
+    "hasGlow": false
+  }
+}

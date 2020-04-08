@@ -28,7 +28,7 @@ public class ItemMetalichydrogenArmor extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:metalichydrogenarmorboots")
 	public static final Item boots = null;
 	public ItemMetalichydrogenArmor(ElementsPolarcraft instance) {
-		super(instance, 46);
+		super(instance, 38);
 	}
 
 	@Override

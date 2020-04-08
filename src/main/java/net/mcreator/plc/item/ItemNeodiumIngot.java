@@ -12,7 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
-import net.mcreator.plc.creativetab.TabAntarcticraft;
+import net.mcreator.plc.creativetab.TabMineral;
 import net.mcreator.plc.ElementsPolarcraft;
 
 @ElementsPolarcraft.ModElement.Tag
@@ -20,7 +20,7 @@ public class ItemNeodiumIngot extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:neodiumingot")
 	public static final Item block = null;
 	public ItemNeodiumIngot(ElementsPolarcraft instance) {
-		super(instance, 49);
+		super(instance, 60);
 	}
 
 	@Override
@@ -39,7 +39,7 @@ public class ItemNeodiumIngot extends ElementsPolarcraft.ModElement {
 			maxStackSize = 64;
 			setUnlocalizedName("neodiumingot");
 			setRegistryName("neodiumingot");
-			setCreativeTab(TabAntarcticraft.tab);
+			setCreativeTab(TabMineral.tab);
 		}
 
 		@Override

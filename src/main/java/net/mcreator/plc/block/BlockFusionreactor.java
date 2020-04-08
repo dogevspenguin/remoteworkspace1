@@ -49,7 +49,7 @@ public class BlockFusionreactor extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:fusionreactor")
 	public static final Block block = null;
 	public BlockFusionreactor(ElementsPolarcraft instance) {
-		super(instance, 70);
+		super(instance, 88);
 	}
 
 	@Override

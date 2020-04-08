@@ -28,7 +28,7 @@ public class ItemTitaniumArmor extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:titaniumarmorboots")
 	public static final Item boots = null;
 	public ItemTitaniumArmor(ElementsPolarcraft instance) {
-		super(instance, 11);
+		super(instance, 8);
 	}
 
 	@Override

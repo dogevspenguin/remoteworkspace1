@@ -4,10 +4,10 @@
   "definition": {
     "name": "Icevallaysouth",
     "groundBlock": {
-      "value": "CUSTOM:Compacice"
+      "value": "Blocks.ICE"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "CUSTOM:Compacice"
     },
     "generateLakes": true,
     "treeType": 0,

@@ -14,7 +14,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
-import net.mcreator.plc.creativetab.TabAntarcticraft;
+import net.mcreator.plc.creativetab.TabMineral;
 import net.mcreator.plc.ElementsPolarcraft;
 
 @ElementsPolarcraft.ModElement.Tag
@@ -22,7 +22,7 @@ public class BlockNeodiumOreBlock extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:neodiumoreblock")
 	public static final Block block = null;
 	public BlockNeodiumOreBlock(ElementsPolarcraft instance) {
-		super(instance, 48);
+		super(instance, 61);
 	}
 
 	@Override
@@ -46,7 +46,7 @@ public class BlockNeodiumOreBlock extends ElementsPolarcraft.ModElement {
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabAntarcticraft.tab);
+			setCreativeTab(TabMineral.tab);
 		}
 	}
 }

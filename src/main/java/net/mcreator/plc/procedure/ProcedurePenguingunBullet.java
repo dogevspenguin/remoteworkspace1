@@ -9,7 +9,7 @@ import net.mcreator.plc.ElementsPolarcraft;
 @ElementsPolarcraft.ModElement.Tag
 public class ProcedurePenguingunBullet extends ElementsPolarcraft.ModElement {
 	public ProcedurePenguingunBullet(ElementsPolarcraft instance) {
-		super(instance, 89);
+		super(instance, 107);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

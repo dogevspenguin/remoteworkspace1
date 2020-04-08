@@ -13,7 +13,7 @@ import net.mcreator.plc.ElementsPolarcraft;
 @ElementsPolarcraft.ModElement.Tag
 public class RecipeTrihydrideOreSmelting extends ElementsPolarcraft.ModElement {
 	public RecipeTrihydrideOreSmelting(ElementsPolarcraft instance) {
-		super(instance, 75);
+		super(instance, 93);
 	}
 
 	@Override

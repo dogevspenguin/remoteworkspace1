@@ -32,7 +32,7 @@ public class BlockSnowice extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:snowice")
 	public static final Block block = null;
 	public BlockSnowice(ElementsPolarcraft instance) {
-		super(instance, 13);
+		super(instance, 10);
 	}
 
 	@Override

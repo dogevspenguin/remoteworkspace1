@@ -1,8 +1,0 @@
-{
-  "parent": "plc:custom/backpackpepe",
-  "textures": {
-    "all": "plc:blocks/backpack",
-    "particle": "plc:blocks/backpack",
-    "0": "plc:blocks/backpack"
-  }
-}

@@ -25,7 +25,7 @@ public class ItemKiwisong extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:kiwisong")
 	public static final Item block = null;
 	public ItemKiwisong(ElementsPolarcraft instance) {
-		super(instance, 108);
+		super(instance, 40);
 	}
 
 	@Override

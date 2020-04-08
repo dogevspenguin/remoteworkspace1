@@ -12,7 +12,7 @@ import net.mcreator.plc.ElementsPolarcraft;
 @ElementsPolarcraft.ModElement.Tag
 public class ProcedureAntarcticsaladFoodEaten extends ElementsPolarcraft.ModElement {
 	public ProcedureAntarcticsaladFoodEaten(ElementsPolarcraft instance) {
-		super(instance, 88);
+		super(instance, 106);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

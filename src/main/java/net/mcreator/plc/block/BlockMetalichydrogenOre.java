@@ -10,9 +10,11 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.NonNullList;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
@@ -25,7 +27,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.plc.world.WorldNorthpole;
 import net.mcreator.plc.item.ItemMetalichydrogenDust;
-import net.mcreator.plc.creativetab.TabAntarcticraft;
+import net.mcreator.plc.creativetab.TabMineral;
 import net.mcreator.plc.ElementsPolarcraft;
 
 import java.util.Random;
@@ -35,7 +37,7 @@ public class BlockMetalichydrogenOre extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:metalichydrogenore")
 	public static final Block block = null;
 	public BlockMetalichydrogenOre(ElementsPolarcraft instance) {
-		super(instance, 38);
+		super(instance, 56);
 	}
 
 	@Override
@@ -57,15 +59,21 @@ public class BlockMetalichydrogenOre extends ElementsPolarcraft.ModElement {
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return;
-		for (int i = 0; i < 11; i++) {
+		boolean biomeCriteria = false;
+		Biome biome = world.getBiome(new BlockPos(chunkX, 128, chunkZ));
+		if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("plc:icevallaynorth")))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
+		for (int i = 0; i < 20; i++) {
 			int x = chunkX + random.nextInt(16);
-			int y = random.nextInt(62) + 1;
+			int y = random.nextInt(75) + 1;
 			int z = chunkZ + random.nextInt(16);
 			(new WorldGenMinable(block.getDefaultState(), 7, new com.google.common.base.Predicate<IBlockState>() {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;
-					if (blockAt.getBlock() == BlockCompressice.block.getDefaultState().getBlock())
+					if (blockAt.getBlock() == BlockCompacice.block.getDefaultState().getBlock())
 						blockCriteria = true;
 					return blockCriteria;
 				}
@@ -82,7 +90,7 @@ public class BlockMetalichydrogenOre extends ElementsPolarcraft.ModElement {
 			setResistance(5F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabAntarcticraft.tab);
+			setCreativeTab(TabMineral.tab);
 		}
 
 		@Override

@@ -26,7 +26,7 @@
     "resistance": 5.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:Antarcticraft"
+      "value": "CUSTOM:Mineral"
     },
     "destroyTool": "pickaxe",
     "affectedBySilkTouch": true,
@@ -80,15 +80,19 @@
     "spawnWorldTypes": [
       "CUSTOM:Northpole"
     ],
-    "restrictionBiomes": [],
-    "blocksToReplace": [
+    "restrictionBiomes": [
       {
-        "value": "CUSTOM:Compressice"
+        "value": "CUSTOM:Icevallaynorth"
       }
     ],
-    "frequencyPerChunks": 11,
+    "blocksToReplace": [
+      {
+        "value": "CUSTOM:Compacice"
+      }
+    ],
+    "frequencyPerChunks": 20,
     "frequencyOnChunk": 7,
     "minGenerateHeight": 1,
-    "maxGenerateHeight": 63
+    "maxGenerateHeight": 76
   }
 }

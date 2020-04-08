@@ -24,7 +24,7 @@ public class ItemPenguinmeat extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:penguinmeat")
 	public static final Item block = null;
 	public ItemPenguinmeat(ElementsPolarcraft instance) {
-		super(instance, 35);
+		super(instance, 30);
 	}
 
 	@Override

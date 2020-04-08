@@ -64,6 +64,7 @@ import net.minecraft.block.BlockFalling;
 import net.minecraft.block.Block;
 
 import net.mcreator.plc.item.ItemNorthpole;
+import net.mcreator.plc.block.BlockIcewater;
 import net.mcreator.plc.block.BlockCompacice;
 import net.mcreator.plc.ElementsPolarcraft;
 
@@ -82,7 +83,7 @@ public class WorldNorthpole extends ElementsPolarcraft.ModElement {
 	public static final BlockCustomPortal portal = null;
 	public static DimensionType dtype;
 	public WorldNorthpole(ElementsPolarcraft instance) {
-		super(instance, 17);
+		super(instance, 14);
 	}
 
 	@Override
@@ -150,15 +151,6 @@ public class WorldNorthpole extends ElementsPolarcraft.ModElement {
 		@Override
 		public WorldSleepResult canSleepAt(EntityPlayer player, BlockPos pos) {
 			return WorldSleepResult.ALLOW;
-		}
-
-		@Override
-		protected void generateLightBrightnessTable() {
-			float f = 0.5f;
-			for (int i = 0; i <= 15; ++i) {
-				float f1 = 1 - (float) i / 15f;
-				this.lightBrightnessTable[i] = (1 - f1) / (f1 * 3 + 1) * (1 - f) + f;
-			}
 		}
 
 		@Override
@@ -718,7 +710,7 @@ public class WorldNorthpole extends ElementsPolarcraft.ModElement {
 	public static class ChunkProviderModded implements IChunkGenerator {
 		private static final IBlockState STONE = Blocks.ICE.getDefaultState();
 		private static final IBlockState STONE2 = BlockCompacice.block.getDefaultState();
-		private static final IBlockState FLUID = Blocks.WATER.getDefaultState();
+		private static final IBlockState FLUID = BlockIcewater.block.getDefaultState();
 		private static final IBlockState AIR = Blocks.AIR.getDefaultState();
 		private static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
 		private static final int SEALEVEL = 63;

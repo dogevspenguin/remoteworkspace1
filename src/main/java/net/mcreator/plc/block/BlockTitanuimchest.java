@@ -11,6 +11,8 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.tileentity.TileEntity;
@@ -22,7 +24,6 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
-import net.minecraft.inventory.ContainerChest;
 import net.minecraft.inventory.Container;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.entity.player.EntityPlayer;
@@ -33,6 +34,8 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.Block;
 
+import net.mcreator.plc.procedure.ProcedureTitaniumchestOnBlockRightClicked;
+import net.mcreator.plc.gui.GuiTitaniumchest;
 import net.mcreator.plc.creativetab.TabAntarcticraft;
 import net.mcreator.plc.ElementsPolarcraft;
 
@@ -41,7 +44,7 @@ public class BlockTitanuimchest extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:titanuimchest")
 	public static final Block block = null;
 	public BlockTitanuimchest(ElementsPolarcraft instance) {
-		super(instance, 113);
+		super(instance, 42);
 	}
 
 	@Override
@@ -64,9 +67,10 @@ public class BlockTitanuimchest extends ElementsPolarcraft.ModElement {
 		public BlockCustom() {
 			super(Material.ROCK);
 			setUnlocalizedName("titanuimchest");
-			setSoundType(SoundType.GROUND);
-			setHardness(1F);
-			setResistance(10F);
+			setSoundType(SoundType.METAL);
+			setHarvestLevel("pickaxe", 1);
+			setHardness(2F);
+			setResistance(12F);
 			setLightLevel(0F);
 			setLightOpacity(255);
 			setCreativeTab(TabAntarcticraft.tab);
@@ -110,6 +114,25 @@ public class BlockTitanuimchest extends ElementsPolarcraft.ModElement {
 				return Container.calcRedstoneFromInventory((TileEntityCustom) tileentity);
 			else
 				return 0;
+		}
+
+		@Override
+		public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer entity, EnumHand hand, EnumFacing direction,
+				float hitX, float hitY, float hitZ) {
+			super.onBlockActivated(world, pos, state, entity, hand, direction, hitX, hitY, hitZ);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureTitaniumchestOnBlockRightClicked.executeProcedure($_dependencies);
+			}
+			return true;
 		}
 	}
 
@@ -191,8 +214,7 @@ public class BlockTitanuimchest extends ElementsPolarcraft.ModElement {
 
 		@Override
 		public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-			this.fillWithLoot(playerIn);
-			return new ContainerChest(playerInventory, this, playerIn);
+			return new GuiTitaniumchest.GuiContainerMod(this.getWorld(), this.getPos().getX(), this.getPos().getY(), this.getPos().getZ(), playerIn);
 		}
 
 		@Override

@@ -44,7 +44,7 @@ public class ItemPenguingun extends ElementsPolarcraft.ModElement {
 	public static final Item block = null;
 	public static final int ENTITYID = 6;
 	public ItemPenguingun(ElementsPolarcraft instance) {
-		super(instance, 37);
+		super(instance, 32);
 	}
 
 	@Override

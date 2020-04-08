@@ -21,7 +21,7 @@ public class ItemIcelemon extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:icelemon")
 	public static final Item block = null;
 	public ItemIcelemon(ElementsPolarcraft instance) {
-		super(instance, 33);
+		super(instance, 28);
 	}
 
 	@Override

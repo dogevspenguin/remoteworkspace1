@@ -29,7 +29,7 @@ public class ItemTrihydrideSword extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:trihydridesword")
 	public static final Item block = null;
 	public ItemTrihydrideSword(ElementsPolarcraft instance) {
-		super(instance, 25);
+		super(instance, 20);
 	}
 
 	@Override

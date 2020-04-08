@@ -20,7 +20,7 @@ public class ItemCalmpen extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:calmpen")
 	public static final Item block = null;
 	public ItemCalmpen(ElementsPolarcraft instance) {
-		super(instance, 107);
+		super(instance, 39);
 	}
 
 	@Override

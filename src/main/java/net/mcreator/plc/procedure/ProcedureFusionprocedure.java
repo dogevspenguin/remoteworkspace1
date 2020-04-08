@@ -8,7 +8,7 @@ import net.mcreator.plc.ElementsPolarcraft;
 @ElementsPolarcraft.ModElement.Tag
 public class ProcedureFusionprocedure extends ElementsPolarcraft.ModElement {
 	public ProcedureFusionprocedure(ElementsPolarcraft instance) {
-		super(instance, 110);
+		super(instance, 124);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -42,7 +42,7 @@ public class EntityPenguin extends ElementsPolarcraft.ModElement {
 	public static final int ENTITYID = 1;
 	public static final int ENTITYID_RANGED = 2;
 	public EntityPenguin(ElementsPolarcraft instance) {
-		super(instance, 15);
+		super(instance, 12);
 	}
 
 	@Override

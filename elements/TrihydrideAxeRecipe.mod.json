@@ -5,6 +5,7 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "recipeRetstackSize": 1,
+    "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
       {
@@ -20,7 +21,7 @@
         "value": "CUSTOM:TrihydrideIngot"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:Metalicstick"
       },
       {
         "value": ""
@@ -29,7 +30,7 @@
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:Metalicstick"
       },
       {
         "value": ""

@@ -19,7 +19,7 @@ public class BiomeIcevallaynorth extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:icevallaynorth")
 	public static final BiomeGenCustom biome = null;
 	public BiomeIcevallaynorth(ElementsPolarcraft instance) {
-		super(instance, 68);
+		super(instance, 86);
 	}
 
 	@Override

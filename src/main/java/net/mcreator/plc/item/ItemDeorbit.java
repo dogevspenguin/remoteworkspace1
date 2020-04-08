@@ -20,7 +20,7 @@ public class ItemDeorbit extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:deorbit")
 	public static final Item block = null;
 	public ItemDeorbit(ElementsPolarcraft instance) {
-		super(instance, 106);
+		super(instance, 65);
 	}
 
 	@Override
