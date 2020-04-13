@@ -36,6 +36,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.plc.gui.GuiTitaniumchest;
 import net.mcreator.plc.gui.GuiFusionreatorgui;
+import net.mcreator.plc.gui.GuiDefensergui;
 
 import java.util.function.Supplier;
 import java.util.Random;
@@ -136,6 +137,8 @@ public class ElementsPolarcraft implements IFuelHandler, IWorldGenerator {
 				return new GuiFusionreatorgui.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiTitaniumchest.GUIID)
 				return new GuiTitaniumchest.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiDefensergui.GUIID)
+				return new GuiDefensergui.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -145,6 +148,8 @@ public class ElementsPolarcraft implements IFuelHandler, IWorldGenerator {
 				return new GuiFusionreatorgui.GuiWindow(world, x, y, z, player);
 			if (id == GuiTitaniumchest.GUIID)
 				return new GuiTitaniumchest.GuiWindow(world, x, y, z, player);
+			if (id == GuiDefensergui.GUIID)
+				return new GuiDefensergui.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

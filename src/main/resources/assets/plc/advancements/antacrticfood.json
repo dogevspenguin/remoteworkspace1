@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "plc:antarcticsalad"
+    },
+    "title": {
+      "translate": "advancements.antacrticfood.title"
+    },
+    "description": {
+      "translate": "advancements.antacrticfood.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "antacrticfood": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "plc:antarcticsalad"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "plc:penguinkill"
+}

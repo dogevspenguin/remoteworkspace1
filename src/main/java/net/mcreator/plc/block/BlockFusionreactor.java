@@ -32,6 +32,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.EnumPushReaction;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.Block;
@@ -93,12 +94,17 @@ public class BlockFusionreactor extends ElementsPolarcraft.ModElement {
 
 		@Override
 		public int tickRate(World world) {
-			return 300;
+			return 200;
 		}
 
 		@Override
 		public boolean isOpaqueCube(IBlockState state) {
 			return false;
+		}
+
+		@Override
+		public EnumPushReaction getMobilityFlag(IBlockState state) {
+			return EnumPushReaction.BLOCK;
 		}
 
 		@Override
@@ -203,6 +209,8 @@ public class BlockFusionreactor extends ElementsPolarcraft.ModElement {
 
 		@Override
 		public boolean isItemValidForSlot(int index, ItemStack stack) {
+			if (index == 3)
+				return false;
 			return true;
 		}
 

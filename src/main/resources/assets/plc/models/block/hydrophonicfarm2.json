@@ -1,0 +1,8 @@
+{
+  "parent": "plc:custom/hydrophonic_farms3",
+  "textures": {
+    "all": "plc:blocks/stage3",
+    "particle": "plc:blocks/stage3",
+    "0": "plc:blocks/stage3"
+  }
+}

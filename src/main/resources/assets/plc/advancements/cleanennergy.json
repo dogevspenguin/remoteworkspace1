@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "plc:fusionreactor"
+    },
+    "title": {
+      "translate": "advancements.cleanennergy.title"
+    },
+    "description": {
+      "translate": "advancements.cleanennergy.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cleanennergy": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "item": "plc:fusionreactor"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "loot": [
+      "plc:fuelcellloot"
+    ],
+    "recipes": [
+      "plc:fuelcellrecipe"
+    ]
+  },
+  "parent": "plc:nodirt"
+}

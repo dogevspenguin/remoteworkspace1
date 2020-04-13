@@ -53,7 +53,7 @@
     "temperature": -0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.08,
-    "spawnBiome": true,
+    "spawnBiome": false,
     "biomeWeight": 10,
     "biomeType": "ICY",
     "biomeCategory": "NONE",
@@ -61,6 +61,22 @@
       "value": "No parent"
     },
     "biomeDictionaryTypes": [],
-    "spawnList": []
+    "spawnList": [
+      {
+        "value": "CUSTOM:Penguin"
+      },
+      {
+        "value": "CUSTOM:Babypenguin"
+      },
+      {
+        "value": "CUSTOM:Creeperticle"
+      },
+      {
+        "value": "CUSTOM:Giantpetrel"
+      },
+      {
+        "value": "CUSTOM:Polarcod"
+      }
+    ]
   }
 }

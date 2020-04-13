@@ -2,9 +2,17 @@ package net.mcreator.plc.procedure;
 
 import net.minecraft.world.WorldServer;
 import net.minecraft.world.World;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.entity.Entity;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.plc.ElementsPolarcraft;
+
+import java.util.Iterator;
 
 @ElementsPolarcraft.ModElement.Tag
 public class ProcedurePenguingunBullet extends ElementsPolarcraft.ModElement {
@@ -13,6 +21,10 @@ public class ProcedurePenguingunBullet extends ElementsPolarcraft.ModElement {
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			System.err.println("Failed to load dependency entity for procedure PenguingunBullet!");
+			return;
+		}
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure PenguingunBullet!");
 			return;
@@ -29,6 +41,7 @@ public class ProcedurePenguingunBullet extends ElementsPolarcraft.ModElement {
 			System.err.println("Failed to load dependency world for procedure PenguingunBullet!");
 			return;
 		}
+		Entity entity = (Entity) dependencies.get("entity");
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
@@ -38,5 +51,17 @@ public class ProcedurePenguingunBullet extends ElementsPolarcraft.ModElement {
 		}
 		if (world instanceof WorldServer)
 			((WorldServer) world).spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, x, y, z, (int) 5, 3, 3, 3, 1, new int[0]);
+		if (entity instanceof EntityPlayerMP) {
+			Advancement _adv = ((MinecraftServer) ((EntityPlayerMP) entity).mcServer).getAdvancementManager()
+					.getAdvancement(new ResourceLocation("plc:penguintrapwhat"));
+			AdvancementProgress _ap = ((EntityPlayerMP) entity).getAdvancements().getProgress(_adv);
+			if (!_ap.isDone()) {
+				Iterator _iterator = _ap.getRemaningCriteria().iterator();
+				while (_iterator.hasNext()) {
+					String _criterion = (String) _iterator.next();
+					((EntityPlayerMP) entity).getAdvancements().grantCriterion(_adv, _criterion);
+				}
+			}
+		}
 	}
 }

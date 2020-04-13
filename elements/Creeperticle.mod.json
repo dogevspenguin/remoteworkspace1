@@ -12,7 +12,7 @@
     "armorBaseValue": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -1,
+      "value": -3342337,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
@@ -43,7 +43,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
+    "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 0,
     "movementSpeed": 0.19999999999999998,
@@ -98,7 +98,7 @@
     },
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningProbability": 100,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 3,
     "maxNumberOfMobsPerGroup": 30,

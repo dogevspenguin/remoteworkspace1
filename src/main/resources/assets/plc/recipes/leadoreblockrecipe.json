@@ -1,0 +1,42 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "plc:leaddust"
+    },
+    "1": {
+      "item": "plc:leaddust"
+    },
+    "2": {
+      "item": "plc:leaddust"
+    },
+    "3": {
+      "item": "plc:leaddust"
+    },
+    "4": {
+      "item": "plc:leaddust"
+    },
+    "5": {
+      "item": "plc:leaddust"
+    },
+    "6": {
+      "item": "plc:leaddust"
+    },
+    "7": {
+      "item": "plc:leaddust"
+    },
+    "8": {
+      "item": "plc:leaddust"
+    }
+  },
+  "result": {
+    "item": "plc:leadoreblock",
+    "count": 1
+  }
+}

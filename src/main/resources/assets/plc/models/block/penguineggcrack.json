@@ -1,0 +1,8 @@
+{
+  "parent": "plc:custom/penuin_egg_(1)",
+  "textures": {
+    "all": "plc:blocks/egg_crack1",
+    "particle": "plc:blocks/egg_crack1",
+    "0": "plc:blocks/egg_crack1"
+  }
+}

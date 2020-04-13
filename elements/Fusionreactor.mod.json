@@ -42,7 +42,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 300,
+    "tickRate": 200,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -53,7 +53,7 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "BLOCK",
     "isNotColidable": false,
     "soundOnStep": {
       "value": "METAL"
@@ -76,7 +76,9 @@
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      3
+    ],
     "onTickUpdate": {
       "name": "FusionreactorUpdateTick"
     },

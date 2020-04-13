@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "plc:blocks/copper_ore_block",
-    "particle": "plc:blocks/copper_ore_block"
+    "all": "plc:blocks/copperblockd",
+    "particle": "plc:blocks/copperblockd"
   }
 }

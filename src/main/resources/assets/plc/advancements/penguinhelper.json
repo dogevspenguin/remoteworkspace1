@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "plc:penguinegg"
+    },
+    "title": {
+      "translate": "advancements.penguinhelper.title"
+    },
+    "description": {
+      "translate": "advancements.penguinhelper.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "penguinhelper": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "plc:penguinkill"
+}

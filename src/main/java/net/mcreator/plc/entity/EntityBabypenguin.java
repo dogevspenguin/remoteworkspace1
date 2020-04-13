@@ -18,7 +18,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIPanic;
@@ -28,6 +27,7 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.model.ModelRenderer;
@@ -54,7 +54,7 @@ public class EntityBabypenguin extends ElementsPolarcraft.ModElement {
 	public void init(FMLInitializationEvent event) {
 		Biome[] spawnBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("plc:icevallaysouth")),
 				Biome.REGISTRY.getObject(new ResourceLocation("plc:snowvallaysouth")),};
-		EntityRegistry.addSpawn(EntityCustom.class, 15, 3, 10, EnumCreatureType.CREATURE, spawnBiomes);
+		EntityRegistry.addSpawn(EntityCustom.class, 20, 2, 6, EnumCreatureType.CREATURE, spawnBiomes);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -68,7 +68,7 @@ public class EntityBabypenguin extends ElementsPolarcraft.ModElement {
 			};
 		});
 	}
-	public static class EntityCustom extends EntityMob {
+	public static class EntityCustom extends EntityCreature {
 		public EntityCustom(World world) {
 			super(world);
 			setSize(0.35f, 1f);

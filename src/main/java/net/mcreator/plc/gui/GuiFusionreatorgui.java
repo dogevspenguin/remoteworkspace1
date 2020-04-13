@@ -277,7 +277,7 @@ public class GuiFusionreatorgui extends ElementsPolarcraft.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			this.fontRenderer.drawString("fusion reactor", 52, 11, -1);
+			this.fontRenderer.drawString("fusion reactor", 7, 2, -13421773);
 			this.fontRenderer.drawString("fuel input", 7, 38, -13421773);
 		}
 

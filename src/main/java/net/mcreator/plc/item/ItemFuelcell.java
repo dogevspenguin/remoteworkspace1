@@ -9,10 +9,10 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
-import net.mcreator.plc.creativetab.TabAntarcticraft;
 import net.mcreator.plc.ElementsPolarcraft;
 
 @ElementsPolarcraft.ModElement.Tag
@@ -20,7 +20,7 @@ public class ItemFuelcell extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:fuelcell")
 	public static final Item block = null;
 	public ItemFuelcell(ElementsPolarcraft instance) {
-		super(instance, 41);
+		super(instance, 199);
 	}
 
 	@Override
@@ -39,7 +39,7 @@ public class ItemFuelcell extends ElementsPolarcraft.ModElement {
 			maxStackSize = 64;
 			setUnlocalizedName("fuelcell");
 			setRegistryName("fuelcell");
-			setCreativeTab(TabAntarcticraft.tab);
+			setCreativeTab(CreativeTabs.MISC);
 		}
 
 		@Override

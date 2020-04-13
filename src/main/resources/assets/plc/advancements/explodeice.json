@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:skull",
+      "data": 4
+    },
+    "title": {
+      "translate": "advancements.explodeice.title"
+    },
+    "description": {
+      "translate": "advancements.explodeice.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "explodeice": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "plc:penguintrapwhat"
+}

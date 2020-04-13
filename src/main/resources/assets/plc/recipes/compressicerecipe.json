@@ -1,0 +1,26 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:ice"
+    },
+    "1": {
+      "item": "minecraft:ice"
+    },
+    "2": {
+      "item": "minecraft:ice"
+    },
+    "3": {
+      "item": "minecraft:ice"
+    }
+  },
+  "result": {
+    "item": "plc:compacice",
+    "count": 1
+  }
+}

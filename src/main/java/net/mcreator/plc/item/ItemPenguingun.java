@@ -142,6 +142,7 @@ public class ItemPenguingun extends ElementsPolarcraft.ModElement {
 			World world = this.world;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -160,6 +161,7 @@ public class ItemPenguingun extends ElementsPolarcraft.ModElement {
 			World world = this.world;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -177,14 +179,6 @@ public class ItemPenguingun extends ElementsPolarcraft.ModElement {
 			World world = this.world;
 			Entity entity = (Entity) shootingEntity;
 			if (this.inGround) {
-				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					ProcedurePenguingunBullet.executeProcedure($_dependencies);
-				}
 				this.world.removeEntity(this);
 			}
 		}

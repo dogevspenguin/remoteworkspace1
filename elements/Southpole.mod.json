@@ -25,6 +25,12 @@
       },
       {
         "value": "CUSTOM:Snowvallaysoutj"
+      },
+      {
+        "value": "CUSTOM:Rockyshore"
+      },
+      {
+        "value": "CUSTOM:Rockyshore"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -38,7 +44,7 @@
       "value": ""
     },
     "fluidBlock": {
-      "value": "CUSTOM:Icewater"
+      "value": "Blocks.WATER"
     },
     "airColor": {
       "value": -4138753,

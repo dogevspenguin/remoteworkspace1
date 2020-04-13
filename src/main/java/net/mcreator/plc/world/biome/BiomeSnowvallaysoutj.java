@@ -3,13 +3,17 @@ package net.mcreator.plc.world.biome;
 
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.common.BiomeManager;
 
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.biome.Biome;
 
+import net.mcreator.plc.entity.EntityPolarcod;
+import net.mcreator.plc.entity.EntityPenguin;
+import net.mcreator.plc.entity.EntityGiantpetrel;
+import net.mcreator.plc.entity.EntityCreeperticle;
+import net.mcreator.plc.entity.EntityBabypenguin;
 import net.mcreator.plc.block.BlockSnowice;
-import net.mcreator.plc.block.BlockCompressice;
+import net.mcreator.plc.block.BlockAntarcticarock;
 import net.mcreator.plc.ElementsPolarcraft;
 
 import java.util.Random;
@@ -29,15 +33,13 @@ public class BiomeSnowvallaysoutj extends ElementsPolarcraft.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		BiomeManager.addSpawnBiome(biome);
-		BiomeManager.addBiome(BiomeManager.BiomeType.COOL, new BiomeManager.BiomeEntry(biome, 10));
 	}
 	static class BiomeGenCustom extends Biome {
 		public BiomeGenCustom() {
 			super(new Biome.BiomeProperties("Snowvallaysouth").setRainfall(0.2F).setBaseHeight(0.1F).setHeightVariation(0.01F).setTemperature(-0.3F));
 			setRegistryName("snowvallaysouth");
 			topBlock = BlockSnowice.block.getDefaultState();
-			fillerBlock = BlockCompressice.block.getDefaultState();
+			fillerBlock = BlockAntarcticarock.block.getDefaultState();
 			decorator.generateFalls = true;
 			decorator.treesPerChunk = 0;
 			decorator.flowersPerChunk = 0;
@@ -53,6 +55,11 @@ public class BiomeSnowvallaysoutj extends ElementsPolarcraft.ModElement {
 			this.spawnableCreatureList.clear();
 			this.spawnableWaterCreatureList.clear();
 			this.spawnableCaveCreatureList.clear();
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityPenguin.EntityCustom.class, 40, 1, 5));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityBabypenguin.EntityCustom.class, 40, 1, 5));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityGiantpetrel.EntityCustom.class, 40, 1, 5));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityPolarcod.EntityCustom.class, 40, 1, 5));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityCreeperticle.EntityCustom.class, 40, 1, 5));
 		}
 
 		@Override

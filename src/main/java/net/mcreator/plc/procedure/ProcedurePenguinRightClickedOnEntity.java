@@ -8,7 +8,6 @@ import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.init.Items;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.plc.entity.EntityArticdogtamed;
@@ -46,8 +45,7 @@ public class ProcedurePenguinRightClickedOnEntity extends ElementsPolarcraft.Mod
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if ((((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(Items.FISH, (int) (1), 0).getItem())) {
+		if (((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).inventory.hasItemStack(new ItemStack(Items.FISH, (int) (1), 0)) : false)) {
 			entity.world.removeEntity(entity);
 			if (!world.isRemote) {
 				Entity entityToSpawn = new EntityArticdogtamed.EntityCustom(world);
@@ -59,12 +57,12 @@ public class ProcedurePenguinRightClickedOnEntity extends ElementsPolarcraft.Mod
 			world.playSound((EntityPlayer) null, x, y, z,
 					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("entity.wolf.whine")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			if (world instanceof WorldServer)
+				((WorldServer) world).spawnParticle(EnumParticleTypes.HEART, x, y, z, (int) 5, 3, 3, 3, 1, new int[0]);
 		}
 		if ((!((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).capabilities.isCreativeMode : false))) {
 			if (entity instanceof EntityPlayer)
 				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(Items.FISH, (int) (1), 0).getItem(), 0, (int) 1, null);
-			if (world instanceof WorldServer)
-				((WorldServer) world).spawnParticle(EnumParticleTypes.HEART, x, y, z, (int) 5, 3, 3, 3, 1, new int[0]);
 		}
 	}
 }

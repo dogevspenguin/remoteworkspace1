@@ -3,12 +3,16 @@ package net.mcreator.plc.world.biome;
 
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.common.BiomeManager;
 
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.init.Blocks;
+import net.minecraft.entity.monster.EntityPolarBear;
 
+import net.mcreator.plc.entity.EntityPolarcod;
+import net.mcreator.plc.entity.EntityGiantpetrel;
+import net.mcreator.plc.entity.EntityCreeperticle;
+import net.mcreator.plc.entity.EntityArticdog;
 import net.mcreator.plc.block.BlockCompacice;
 import net.mcreator.plc.ElementsPolarcraft;
 
@@ -29,8 +33,6 @@ public class BiomeIcevallaynorth extends ElementsPolarcraft.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		BiomeManager.addSpawnBiome(biome);
-		BiomeManager.addBiome(BiomeManager.BiomeType.ICY, new BiomeManager.BiomeEntry(biome, 10));
 	}
 	static class BiomeGenCustom extends Biome {
 		public BiomeGenCustom() {
@@ -53,6 +55,11 @@ public class BiomeIcevallaynorth extends ElementsPolarcraft.ModElement {
 			this.spawnableCreatureList.clear();
 			this.spawnableWaterCreatureList.clear();
 			this.spawnableCaveCreatureList.clear();
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityCreeperticle.EntityCustom.class, 40, 1, 5));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityArticdog.EntityCustom.class, 40, 1, 5));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityGiantpetrel.EntityCustom.class, 40, 1, 5));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityPolarcod.EntityCustom.class, 40, 1, 5));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityPolarBear.class, 40, 1, 5));
 		}
 
 		@Override

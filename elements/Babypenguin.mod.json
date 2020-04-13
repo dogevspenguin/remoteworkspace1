@@ -43,7 +43,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "movementSpeed": 0.25,
@@ -95,10 +95,10 @@
     },
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 15,
+    "spawningProbability": 20,
     "mobSpawningType": "creature",
-    "minNumberOfMobsPerGroup": 3,
-    "maxNumberOfMobsPerGroup": 10,
+    "minNumberOfMobsPerGroup": 2,
+    "maxNumberOfMobsPerGroup": 6,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Icevallaysouth"

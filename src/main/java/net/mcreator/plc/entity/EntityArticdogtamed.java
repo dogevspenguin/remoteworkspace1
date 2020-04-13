@@ -14,7 +14,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.init.Items;
-import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAITempt;
 import net.minecraft.entity.ai.EntityAISwimming;
@@ -25,6 +24,7 @@ import net.minecraft.entity.ai.EntityAIFollow;
 import net.minecraft.entity.ai.EntityAIAttackMelee;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EnumCreatureAttribute;
+import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.model.ModelRenderer;
@@ -47,7 +47,7 @@ public class EntityArticdogtamed extends ElementsPolarcraft.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> EntityEntryBuilder.create().entity(EntityCustom.class).id(new ResourceLocation("plc", "articdogtamed"), ENTITYID)
-				.name("articdogtamed").tracker(64, 3, true).build());
+				.name("articdogtamed").tracker(64, 3, true).egg(-1, -1).build());
 	}
 
 	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
@@ -64,18 +64,19 @@ public class EntityArticdogtamed extends ElementsPolarcraft.ModElement {
 		RenderingRegistry.registerEntityRenderingHandler(EntityCustom.class, renderManager -> {
 			return new RenderLiving(renderManager, new Modelarticdog(), 1.4f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("plc:textures/articdogtamed.png");
+					return new ResourceLocation("plc:textures/articdog_1.png");
 				}
 			};
 		});
 	}
-	public static class EntityCustom extends EntityWolf {
+	public static class EntityCustom extends EntityCreature {
 		public EntityCustom(World world) {
 			super(world);
 			setSize(0.7f, 0.7f);
 			experienceValue = 5;
 			this.isImmuneToFire = false;
 			setNoAI(!true);
+			enablePersistence();
 		}
 
 		@Override
@@ -94,6 +95,11 @@ public class EntityArticdogtamed extends ElementsPolarcraft.ModElement {
 		@Override
 		public EnumCreatureAttribute getCreatureAttribute() {
 			return EnumCreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		protected boolean canDespawn() {
+			return false;
 		}
 
 		@Override

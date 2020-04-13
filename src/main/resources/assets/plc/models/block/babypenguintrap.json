@@ -1,8 +1,0 @@
-{
-  "parent": "plc:custom/baby_penguin",
-  "textures": {
-    "all": "plc:blocks/baby_pen_block",
-    "particle": "plc:blocks/baby_pen_block",
-    "0": "plc:blocks/"
-  }
-}

@@ -1,0 +1,22 @@
+{
+  "_fv": 6,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Calmpen"
+      },
+      {
+        "value": "CUSTOM:Deorbit"
+      },
+      {
+        "value": "CUSTOM:Kiwisong"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "musicdisk",
+    "namespace": "forge"
+  }
+}

@@ -35,7 +35,7 @@ public class BlockCopperOre extends ElementsPolarcraft.ModElement {
 	@GameRegistry.ObjectHolder("plc:copperore")
 	public static final Block block = null;
 	public BlockCopperOre(ElementsPolarcraft instance) {
-		super(instance, 62);
+		super(instance, 153);
 	}
 
 	@Override

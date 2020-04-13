@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Fuelcell",
     "creativeTab": {
-      "value": "CUSTOM:Antarcticraft"
+      "value": "MISC"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.ICE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.ICE"
+      },
+      {
+        "value": "Blocks.PACKED_ICE"
+      },
+      {
+        "value": "Blocks.ICE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.ICE"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Compressice"
+    },
+    "name": "compacticerecipe",
+    "namespace": "mod"
+  }
+}

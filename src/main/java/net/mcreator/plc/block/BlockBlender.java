@@ -8,7 +8,11 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -17,7 +21,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
-import net.mcreator.plc.creativetab.TabAntarcticraft;
+import net.mcreator.plc.item.ItemBlendertem;
 import net.mcreator.plc.ElementsPolarcraft;
 
 @ElementsPolarcraft.ModElement.Tag
@@ -48,7 +52,7 @@ public class BlockBlender extends ElementsPolarcraft.ModElement {
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(0);
-			setCreativeTab(TabAntarcticraft.tab);
+			setCreativeTab(null);
 		}
 
 		@SideOnly(Side.CLIENT)
@@ -65,6 +69,11 @@ public class BlockBlender extends ElementsPolarcraft.ModElement {
 		@Override
 		public boolean isOpaqueCube(IBlockState state) {
 			return false;
+		}
+
+		@Override
+		public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
+			drops.add(new ItemStack(ItemBlendertem.block, (int) (1)));
 		}
 	}
 }

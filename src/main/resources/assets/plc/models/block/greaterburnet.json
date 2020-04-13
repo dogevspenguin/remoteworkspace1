@@ -1,0 +1,8 @@
+{
+  "parent": "plc:custom/antarcticabernet",
+  "textures": {
+    "all": "plc:blocks/greater_bernet",
+    "particle": "plc:blocks/greater_bernet",
+    "0": "plc:blocks/greater_bernet"
+  }
+}

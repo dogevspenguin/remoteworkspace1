@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "plc:blocks/coppervert",
+    "up": "plc:blocks/coppervert",
+    "north": "plc:blocks/coppercensorfront",
+    "east": "plc:blocks/copperside",
+    "south": "plc:blocks/copperback",
+    "west": "plc:blocks/copperside",
+    "particle": "plc:blocks/coppervert"
+  }
+}

@@ -16,6 +16,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
@@ -24,7 +25,6 @@ import net.minecraft.entity.ai.EntityAILeapAtTarget;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.EnumCreatureAttribute;
-import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.model.ModelRenderer;
@@ -46,7 +46,7 @@ public class EntityCreeperticle extends ElementsPolarcraft.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> EntityEntryBuilder.create().entity(EntityCustom.class).id(new ResourceLocation("plc", "creeperticle"), ENTITYID)
-				.name("creeperticle").tracker(64, 3, true).egg(-1, -1).build());
+				.name("creeperticle").tracker(64, 3, true).egg(-3342337, -1).build());
 	}
 
 	@Override
@@ -55,7 +55,7 @@ public class EntityCreeperticle extends ElementsPolarcraft.ModElement {
 				Biome.REGISTRY.getObject(new ResourceLocation("plc:snowvallaysouth")),
 				Biome.REGISTRY.getObject(new ResourceLocation("plc:snowvallaynorth")),
 				Biome.REGISTRY.getObject(new ResourceLocation("plc:icevallaynorth")),};
-		EntityRegistry.addSpawn(EntityCustom.class, 20, 3, 30, EnumCreatureType.MONSTER, spawnBiomes);
+		EntityRegistry.addSpawn(EntityCustom.class, 100, 3, 30, EnumCreatureType.MONSTER, spawnBiomes);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -69,7 +69,7 @@ public class EntityCreeperticle extends ElementsPolarcraft.ModElement {
 			};
 		});
 	}
-	public static class EntityCustom extends EntityCreature {
+	public static class EntityCustom extends EntityMob {
 		public EntityCustom(World world) {
 			super(world);
 			setSize(0.6f, 1.8f);
@@ -126,6 +126,7 @@ public class EntityCreeperticle extends ElementsPolarcraft.ModElement {
 			int z = (int) this.posZ;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

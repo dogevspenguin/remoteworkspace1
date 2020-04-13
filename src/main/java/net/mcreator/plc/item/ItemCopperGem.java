@@ -17,10 +17,10 @@ import net.mcreator.plc.ElementsPolarcraft;
 
 @ElementsPolarcraft.ModElement.Tag
 public class ItemCopperGem extends ElementsPolarcraft.ModElement {
-	@GameRegistry.ObjectHolder("plc:copperingot")
+	@GameRegistry.ObjectHolder("plc:coppergem")
 	public static final Item block = null;
 	public ItemCopperGem(ElementsPolarcraft instance) {
-		super(instance, 63);
+		super(instance, 155);
 	}
 
 	@Override
@@ -31,14 +31,14 @@ public class ItemCopperGem extends ElementsPolarcraft.ModElement {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("plc:copperingot", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("plc:coppergem", "inventory"));
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			setMaxDamage(0);
 			maxStackSize = 64;
-			setUnlocalizedName("copperingot");
-			setRegistryName("copperingot");
+			setUnlocalizedName("coppergem");
+			setRegistryName("coppergem");
 			setCreativeTab(TabMineral.tab);
 		}
 

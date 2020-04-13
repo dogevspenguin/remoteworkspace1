@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "plc:hydrophonicfarm3"
+    },
+    "facing=north": {
+      "model": "plc:hydrophonicfarm3"
+    },
+    "facing=east": {
+      "model": "plc:hydrophonicfarm3",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "plc:hydrophonicfarm3",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "plc:hydrophonicfarm3",
+      "y": 270
+    }
+  }
+}

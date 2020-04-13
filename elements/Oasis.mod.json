@@ -1,0 +1,33 @@
+{
+  "_fv": 6,
+  "_type": "structure",
+  "definition": {
+    "structure": "oasisnbt",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:Southpole",
+      "CUSTOM:Northpole"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Icevallaysouth"
+      },
+      {
+        "value": "CUSTOM:Snowvallaysoutj"
+      },
+      {
+        "value": "CUSTOM:Snowvallaynorth"
+      },
+      {
+        "value": "CUSTOM:Icevallaynorth"
+      }
+    ]
+  }
+}

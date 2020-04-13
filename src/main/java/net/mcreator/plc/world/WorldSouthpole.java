@@ -64,7 +64,6 @@ import net.minecraft.block.BlockFalling;
 import net.minecraft.block.Block;
 
 import net.mcreator.plc.item.ItemSouthpole;
-import net.mcreator.plc.block.BlockIcewater;
 import net.mcreator.plc.block.BlockCompressice;
 import net.mcreator.plc.block.BlockCompacice;
 import net.mcreator.plc.ElementsPolarcraft;
@@ -711,7 +710,7 @@ public class WorldSouthpole extends ElementsPolarcraft.ModElement {
 	public static class ChunkProviderModded implements IChunkGenerator {
 		private static final IBlockState STONE = BlockCompacice.block.getDefaultState();
 		private static final IBlockState STONE2 = BlockCompressice.block.getDefaultState();
-		private static final IBlockState FLUID = BlockIcewater.block.getDefaultState();
+		private static final IBlockState FLUID = Blocks.WATER.getDefaultState();
 		private static final IBlockState AIR = Blocks.AIR.getDefaultState();
 		private static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
 		private static final int SEALEVEL = 63;
@@ -1060,7 +1059,8 @@ public class WorldSouthpole extends ElementsPolarcraft.ModElement {
 
 	public static class GenLayerBiomesCustom extends GenLayer {
 		private Biome[] allowedBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("plc:icevallaysouth")),
-				Biome.REGISTRY.getObject(new ResourceLocation("plc:snowvallaysouth")),};
+				Biome.REGISTRY.getObject(new ResourceLocation("plc:snowvallaysouth")),
+				Biome.REGISTRY.getObject(new ResourceLocation("plc:rockyshore")), Biome.REGISTRY.getObject(new ResourceLocation("plc:rockyshore")),};
 		public GenLayerBiomesCustom(long seed) {
 			super(seed);
 		}

@@ -31,9 +31,6 @@
     },
     "bulletModel": "Modelbabypenguin",
     "customBulletModelTexture": "babypenguin.png",
-    "onBulletHitsBlock": {
-      "name": "PenguingunBullet"
-    },
     "onBulletHitsPlayer": {
       "name": "PenguingunBullet"
     },

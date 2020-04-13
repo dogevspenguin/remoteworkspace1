@@ -1,0 +1,19 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 0.7,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:LeadOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:LeadDust"
+    },
+    "name": "leadoresmelting",
+    "namespace": "mod"
+  }
+}

@@ -21,9 +21,11 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIPanic;
+import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.ai.EntityAILookIdle;
 import net.minecraft.entity.ai.EntityAILeapAtTarget;
 import net.minecraft.entity.ai.EntityAIHurtByTarget;
+import net.minecraft.entity.ai.EntityAIAttackMelee;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.EnumCreatureAttribute;
@@ -35,6 +37,7 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelBase;
 
+import net.mcreator.plc.procedure.ProcedurePenguinRightClickedOnEntity1;
 import net.mcreator.plc.ElementsPolarcraft;
 
 @ElementsPolarcraft.ModElement.Tag
@@ -55,7 +58,7 @@ public class EntityPenguin extends ElementsPolarcraft.ModElement {
 	public void init(FMLInitializationEvent event) {
 		Biome[] spawnBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("plc:icevallaysouth")),
 				Biome.REGISTRY.getObject(new ResourceLocation("plc:snowvallaysouth")),};
-		EntityRegistry.addSpawn(EntityCustom.class, 18, 3, 26, EnumCreatureType.CREATURE, spawnBiomes);
+		EntityRegistry.addSpawn(EntityCustom.class, 10, 2, 5, EnumCreatureType.CREATURE, spawnBiomes);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -76,6 +79,7 @@ public class EntityPenguin extends ElementsPolarcraft.ModElement {
 			experienceValue = 5;
 			this.isImmuneToFire = false;
 			setNoAI(!true);
+			enablePersistence();
 		}
 
 		@Override
@@ -83,15 +87,23 @@ public class EntityPenguin extends ElementsPolarcraft.ModElement {
 			super.initEntityAI();
 			this.tasks.addTask(1, new EntityAIWander(this, 1));
 			this.tasks.addTask(2, new EntityAILookIdle(this));
-			this.tasks.addTask(3, new EntityAISwimming(this));
-			this.tasks.addTask(4, new EntityAILeapAtTarget(this, (float) 0.8));
-			this.tasks.addTask(5, new EntityAIPanic(this, 1.2));
-			this.targetTasks.addTask(6, new EntityAIHurtByTarget(this, false));
+			this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityGiantpetrel.EntityCustom.class, true, false));
+			this.targetTasks.addTask(4, new EntityAINearestAttackableTarget(this, EntityPolarcod.EntityCustom.class, true, false));
+			this.tasks.addTask(5, new EntityAIAttackMelee(this, 1.2, false));
+			this.tasks.addTask(6, new EntityAISwimming(this));
+			this.tasks.addTask(7, new EntityAILeapAtTarget(this, (float) 0.8));
+			this.tasks.addTask(8, new EntityAIPanic(this, 1.2));
+			this.targetTasks.addTask(9, new EntityAIHurtByTarget(this, false));
 		}
 
 		@Override
 		public EnumCreatureAttribute getCreatureAttribute() {
 			return EnumCreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		protected boolean canDespawn() {
+			return false;
 		}
 
 		@Override
@@ -127,6 +139,15 @@ public class EntityPenguin extends ElementsPolarcraft.ModElement {
 			int y = (int) this.posY;
 			int z = (int) this.posZ;
 			ItemStack itemstack = entity.getHeldItem(hand);
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedurePenguinRightClickedOnEntity1.executeProcedure($_dependencies);
+			}
 			return true;
 		}
 

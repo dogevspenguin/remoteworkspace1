@@ -26,12 +26,12 @@
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:Antarcticraft"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "affectedBySilkTouch": true,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Blendertem"
     },
     "dropAmount": 1,
     "isBeaconBase": false,

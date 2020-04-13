@@ -20,7 +20,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAISwimming;
-import net.minecraft.entity.ai.EntityAIPanic;
 import net.minecraft.entity.ai.EntityAILookIdle;
 import net.minecraft.entity.ai.EntityAILeapAtTarget;
 import net.minecraft.entity.ai.EntityAIHurtByTarget;
@@ -84,8 +83,7 @@ public class EntityArticdog extends ElementsPolarcraft.ModElement {
 			this.tasks.addTask(2, new EntityAILookIdle(this));
 			this.tasks.addTask(3, new EntityAISwimming(this));
 			this.tasks.addTask(4, new EntityAILeapAtTarget(this, (float) 0.8));
-			this.tasks.addTask(5, new EntityAIPanic(this, 1.2));
-			this.targetTasks.addTask(6, new EntityAIHurtByTarget(this, true));
+			this.targetTasks.addTask(5, new EntityAIHurtByTarget(this, true));
 		}
 
 		@Override

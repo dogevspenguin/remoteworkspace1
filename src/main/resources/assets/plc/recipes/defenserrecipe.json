@@ -1,0 +1,30 @@
+{
+  "group": "plc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "plc:coppersensor"
+    },
+    "3": {
+      "item": "plc:copperoreblock"
+    },
+    "4": {
+      "item": "plc:titanuimchest"
+    },
+    "5": {
+      "item": "plc:copperoreblock"
+    },
+    "7": {
+      "item": "plc:titaniumoreblock"
+    }
+  },
+  "result": {
+    "item": "plc:defenser",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "block/egg_crack1",
+		"particle": "block/egg_crack1"
+	},
+	"elements": [
+		{
+			"from": [6.5, 0, 6.5],
+			"to": [9.5, 4, 9.5],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 4], "texture": "#0"},
+				"east": {"uv": [3, 3, 6, 7], "texture": "#0"},
+				"south": {"uv": [0, 4, 3, 8], "texture": "#0"},
+				"west": {"uv": [6, 6, 9, 10], "texture": "#0"},
+				"up": {"uv": [6, 3, 3, 0], "texture": "#0"},
+				"down": {"uv": [9, 0, 6, 3], "texture": "#0"}
+			}
+		}
+	],
+	"display": {}
+}

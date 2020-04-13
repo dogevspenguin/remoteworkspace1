@@ -1,0 +1,56 @@
+{
+  "_fv": 6,
+  "_type": "plant",
+  "definition": {
+    "renderType": 2,
+    "texture": "penguin_fungi",
+    "customModelName": "communitron:default",
+    "plantType": "normal",
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "name": "Penguinfungi",
+    "creativeTab": {
+      "value": "CUSTOM:Antarcticraft"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0.0,
+    "unbreakable": false,
+    "soundOnStep": {
+      "value": "GROUND"
+    },
+    "customDrop": {
+      "value": "CUSTOM:LeadDust"
+    },
+    "dropAmount": 1,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "frequencyOnChunks": 20,
+    "spawnWorldTypes": [
+      "CUSTOM:Southpole",
+      "CUSTOM:Northpole"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Icevallaysouth"
+      },
+      {
+        "value": "CUSTOM:Snowvallaysoutj"
+      },
+      {
+        "value": "CUSTOM:Snowvallaynorth"
+      },
+      {
+        "value": "CUSTOM:Icevallaynorth"
+      }
+    ],
+    "onEntityCollides": {
+      "name": "IcelemonplantMobplayerCollidesWithPlant"
+    }
+  }
+}

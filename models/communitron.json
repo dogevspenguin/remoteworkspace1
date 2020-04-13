@@ -1,0 +1,39 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "block/penguin_fungi",
+		"particle": "block/penguin_fungi"
+	},
+	"elements": [
+		{
+			"from": [7.5, 0, 7.5],
+			"to": [8.5, 5, 8.5],
+			"faces": {
+				"north": {"uv": [4, 4, 5, 9], "texture": "#0"},
+				"east": {"uv": [5, 5, 6, 10], "texture": "#0"},
+				"south": {"uv": [5, 0, 6, 5], "texture": "#0"},
+				"west": {"uv": [6, 6, 7, 11], "texture": "#0"},
+				"up": {"uv": [5, 1, 4, 0], "texture": "#0"},
+				"down": {"uv": [5, 1, 4, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 5, 6],
+			"to": [10, 6, 10],
+			"faces": {
+				"north": {"uv": [6, 0, 10, 1], "texture": "#0"},
+				"east": {"uv": [6, 1, 10, 2], "texture": "#0"},
+				"south": {"uv": [6, 2, 10, 3], "texture": "#0"},
+				"west": {"uv": [6, 3, 10, 4], "texture": "#0"},
+				"up": {"uv": [4, 4, 0, 0], "texture": "#0"},
+				"down": {"uv": [4, 4, 0, 8], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [2, 75, 0],
+			"translation": [0, 6.75, 0]
+		}
+	}
+}
